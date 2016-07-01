@@ -1,1 +1,107 @@
-Hello, world!
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Sample Aframe VR scene</title>
+    
+    
+    
+    
+    
+    
+    
+    
+  </head>
+
+  <body>
+
+    <html>
+  <head>
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-box 
+         color="#2E9AFE" 
+         width="3" 
+         height="5" 
+         depth="2"
+         position="0 0 -10" 
+         rotation="0 0 0"
+         >
+        <a-animation attribute="rotation" repeat="indefinite" to="360 0 0" dur="2000" >
+        </a-animation>
+     
+      </a-box>
+  
+      <a-box 
+         color="#0101DF" 
+         width="3" 
+         height="5" 
+         depth="2"
+         position="3 0 -10" 
+         rotation="0 0 0"
+         >
+        <a-animation attribute="rotation" repeat="indefinite" to="-360 0 0" dur="2000" >
+        </a-animation>
+      </a-box>
+      
+    <a-box 
+         color="#0101DF" 
+         width="3" 
+         height="5" 
+         depth="2"
+         position="-3 0 -10" 
+         rotation="0 0 0"
+         >
+        <a-animation attribute="rotation" repeat="indefinite" to="-360 0 0" dur="2000" >
+        </a-animation>
+      </a-box>
+      
+      <a-plane 
+               color="#CCC" 
+               height="1" 
+               width="4"
+               position="0 -0.5 0"          
+               ></a-plane>
+  
+   <a-plane 
+               color="#CCC" 
+               height="1" 
+               width="4"
+               position="0 3 0"
+               ></a-plane>
+
+ <a-plane 
+               color="#CCC" 
+               height="4.5" 
+               width="1"
+               position="-2.5 1.25 0"
+               ></a-plane>
+
+      <a-plane 
+               color="#CCC" 
+               height="4.5" 
+               width="1"
+               position="2.5 1.25 0"
+               ></a-plane>
+      
+
+      
+    <a-light type="spot" color="#333" position="-20 0 0" look-at="a-box"></a-light>
+  <a-light type="point" color="#AAA" position="0 5 0"></a-light>
+    
+
+    <a-sky color="#A4A4A4"></a-sky>
+    
+    
+</a-scene>
+  </body>
+</html>
+    
+    
+    
+    
+    
+  </body>
+</html>
